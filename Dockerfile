@@ -6,4 +6,4 @@ COPY ${JAR_FILE} service.jar
 
 ENTRYPOINT ["java", "-jar", "/service.jar"]
 
-EXPOSE 8081
+EXPOSE 8080

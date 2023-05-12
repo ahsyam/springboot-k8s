@@ -19,7 +19,7 @@ spec:
           image: 078599139271.dkr.ecr.eu-north-1.amazonaws.com/flink:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8081
+            - containerPort: 8080
               name: http
               protocol: TCP
 # service type loadbalancer
@@ -36,7 +36,7 @@ spec:
     - name: http
       port: 80
       protocol: TCP
-      targetPort: 8081
+      targetPort: 8080
   type: LoadBalancer
   selector:
     app: springboot-app
